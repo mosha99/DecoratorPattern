@@ -32,7 +32,7 @@ public class AddToListDecorator<T> : CustomListTool<T>
 
     public override string GetLog()
     {
-        string Log = $"{ base.CustomListProvider.GetLog() } - Add Item {NewItem.ToString()}";
+        string Log = $"{ base.CustomListProvider.GetLog() }\n - Add Item {NewItem.ToString()}";
         return Log;
     }
 }

@@ -29,5 +29,19 @@ public class CustomCollection<T> : ICustomCollection<T>
         Console.WriteLine($"{Counter++} - {LogDiscription}");
         return Counter;
     }
+
+    public int Count()
+    {
+        int Counter = 0;
+        ListItem<T> LastAddedItem = LastItem;
+
+        while (LastAddedItem != null)
+        {
+            Counter++;
+            LastAddedItem = LastAddedItem.PreviousItem;
+        }
+
+        return Counter;
+    }
 }
 

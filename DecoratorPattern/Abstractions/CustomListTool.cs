@@ -12,6 +12,11 @@ public abstract class CustomListTool<T> : ICustomListProvider<T>
     public abstract  ICustomCollection<T> GetCollection();
     public abstract string GetLog();
 
+    public void SetCollection(ICustomListProvider<T> customCollection)
+    {
+        CustomListProvider = customCollection;
+    }
+
     public List<T> ToList()
     {
         var x = this.GetCollection();

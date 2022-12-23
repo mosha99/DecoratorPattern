@@ -49,7 +49,7 @@ public class SortReversDecorator<T> : CustomListTool<T>
 
     public override string GetLog()
     {
-        string Log = $"{ base.CustomListProvider.GetLog() } - Sort Revers Items ";
+        string Log = $"{ base.CustomListProvider.GetLog() }\n - Sort Revers Items ";
         return Log;
     }
 }

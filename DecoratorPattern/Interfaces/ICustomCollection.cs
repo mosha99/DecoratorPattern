@@ -5,4 +5,5 @@ public interface ICustomCollection<T>
     public void SetLastItem(ListItem<T> Item);
     public ListItem<T> GetLastItem();
     public int PrintLog();
+    public int Count();
 }
